@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soumik Dastidar | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Hero section with a striking banner and brief introduction -->
+    <header class="hero">
+        <!-- The decorative background image sits behind a semi‑transparent overlay -->
+        <img src="8bf2c2ef-2f6f-4ed7-8f47-d193e702509a.png" alt="Futuristic digital landscape" class="hero-img" />
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Soumik Dastidar</h1>
+            <p class="subtitle">Sophomore • Competitive Programmer • PTE Instructor</p>
+            <p class="slogan">Unveiling “Hello World” to Transformative Possibilities.</p>
+        </div>
+    </header>
+
+    <!-- Navigation bar linking to different sections of the page -->
+    <nav class="navbar">
+        <!-- Mobile menu toggle (visible on small screens) -->
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Dark mode toggle button -->
+        <button id="mode-toggle" class="mode-toggle">Dark Mode</button>
+    </nav>
+
+    <main>
+        <!-- About section summarising career goals and personal interests -->
+        <section id="about" class="fade-in">
+            <h2>About</h2>
+            <div class="card">
+                <p>
+                    Passionate computer science enthusiast on a journey to explore the realms of
+                    technology and innovation. Committed to cultivating expertise in cutting‑edge
+                    technologies, I aspire to contribute to the dynamic landscape of the tech
+                    industry. With a keen eye on the future, my goal is to make a meaningful
+                    impact at Google through dedication, continuous learning and a drive for
+                    excellence. Join me on this exciting adventure of turning dreams into
+                    reality!
+                </p>
+                <p>
+                    Outside of tech, I enjoy tea, cricket and football adventures — balancing
+                    digital curiosities with real‑world passions.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education section listing academic achievements -->
+        <section id="education" class="fade-in">
+            <h2>Education</h2>
+            <div class="education-item card">
+                <h3>Leading University</h3>
+                <p><strong>Bachelor of Science – Computer Science and Engineering</strong> | July 2024 – Present</p>
+                <p>CGPA: 3.90 / 4.00</p>
+                <ul>
+                    <li>Studying core computer science fundamentals with a focus on data structures and algorithms.</li>
+                    <li>Skills developed: C and C++.</li>
+                    <li>Achievements: Placed in the top 10%, ranking 29th out of 525 participants in the Intra-University on-site contest.</li>
+                </ul>
+            </div>
+            <div class="education-item card">
+                <h3>Dhaka College</h3>
+                <p><strong>Higher Secondary Certificate (HSC), Science</strong> | 2022 – 2023</p>
+                <p>GPA: 5.00 / 5.00</p>
+                <ul>
+                    <li>Active member of the Creative Panel in the Dhaka College Cultural Club (DCCC).</li>
+                    <li>Member of the Dhaka College Science Club (DCSC).</li>
+                    <li>Developed skills in technical support and team coordination.</li>
+                </ul>
+            </div>
+            <div class="education-item card">
+                <h3>The Buds Residential Model School and College</h3>
+                <p><strong>Secondary School Certificate (SSC), Science</strong> | 2019 – 2021</p>
+                <p>GPA: 5.00 / 5.00</p>
+                <ul>
+                    <li>Ex‑emerging debater at the school’s debating club.</li>
+                    <li>Member of the science club, fostering early scientific curiosity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications section with show-more functionality -->
+        <section id="certifications" class="fade-in">
+            <h2>Licenses &amp; Certifications</h2>
+            <p>
+                The following certificates represent a curated selection of my most impactful
+                credentials. They highlight expertise across digital marketing, web
+                development and crisis preparedness.
+            </p>
+            <div class="cert-list">
+                <div class="cert-row">
+                    <div class="cert-summary card">
+                        <strong>Google Certified Fundamentals of Digital Marketing</strong>
+                    </div>
+                    <div class="cert-details-box card hidden">
+                        <span>Google (Dec 2021) – Credential ID: 4XGXEH3G</span>
+                    </div>
+                </div>
+                <div class="cert-row">
+                    <div class="cert-summary card">
+                        <strong>COVID‑19: Operational Planning Guidelines &amp; Partners Platform</strong>
+                    </div>
+                    <div class="cert-details-box card hidden">
+                        <span>World Health Organization (Apr 2020)</span>
+                    </div>
+                </div>
+                <div class="cert-row">
+                    <div class="cert-summary card">
+                        <strong>Emerging Respiratory Viruses (COVID‑19)</strong>
+                    </div>
+                    <div class="cert-details-box card hidden">
+                        <span>World Health Organization (Apr 2020)</span>
+                    </div>
+                </div>
+                <!-- Additional certifications hidden by default -->
+                <div class="cert-row extra-cert hidden">
+                    <div class="cert-summary card">
+                        <strong>Responsive Web Design</strong>
+                    </div>
+                    <div class="cert-details-box card hidden">
+                        <span>SoloLearn (Sep 2021) – Credential ID: CT‑ZNZT6HEY</span>
+                    </div>
+                </div>
+                <div class="cert-row extra-cert hidden">
+                    <div class="cert-summary card">
+                        <strong>CSS Certification</strong>
+                    </div>
+                    <div class="cert-details-box card hidden">
+                        <span>SoloLearn (Sep 2021) – Credential ID: CT‑VUXX0KNC</span>
+                    </div>
+                </div>
+            </div>
+            <p class="additional extra-cert hidden card">
+                <em>Other certifications include HTML Certification, COVID‑19: Special Course for Informal
+                Healthcare Providers, COVID‑19 Awareness and Prevention and Coding for Marketers.</em>
+            </p>
+            <div class="show-more-container">
+                <button id="toggle-certs" class="show-more-btn">Expand</button>
+            </div>
+        </section>
+
+        <!-- Co-curricular activities section -->
+        <section id="activities" class="fade-in">
+            <h2>Co‑Curricular Activities</h2>
+            <div class="activity-item card">
+                <h3>Executive, Creative &amp; IT Panel — Dhaka College Cultural Club</h3>
+                <p><em>Dhaka, Bangladesh | 2022–2023</em></p>
+                <ul>
+                    <li>Planned and coordinated monthly cultural events to boost member engagement.</li>
+                    <li>Led the successful execution of the college’s intrafest twice.</li>
+                    <li>Managed the club’s website and maintained its digital presence on platforms like Facebook.</li>
+                </ul>
+            </div>
+            <div class="activity-item card">
+                <h3>Club President &amp; Impromptu Speaker — The Buds Residential Model School Debating Club</h3>
+                <p><em>Sreemangal, Bangladesh | 2019–2020</em></p>
+                <ul>
+                    <li>Led the debate team in regional and state‑level competitions.</li>
+                    <li>Conducted workshops for juniors on topic analysis, critical thinking and persuasive argumentation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Volunteer experience section highlighting community contributions -->
+        <section id="volunteer" class="fade-in">
+            <h2>Volunteer Experience</h2>
+            <div class="card volunteer-item">
+                <h3>District Coordinator, Roar for Street Children</h3>
+                <p><em>2020 – 2022 | Moulvibazar, Bangladesh</em></p>
+                <p>
+                    Roar for Street Children (RSC) is a sincere initiative dedicated to giving
+                    voice to the often‑ignored street children and vulnerable populations. As a
+                    district coordinator, I worked for the welfare of street children in my
+                    district Moulvibazar. During the pandemic we organised mobile schooling
+                    programmes to raise awareness about the COVID‑19 situation and raised funds
+                    to provide essential sanitation materials and one‑time meals.
+                </p>
+            </div>
+            <div class="card volunteer-item">
+                <h3>Member, Nirsartho Procesta</h3>
+                <p><em>2024 – Present | Sreemangal, Bangladesh</em></p>
+                <p>
+                    Nirsartho Procesta (“Selfless Initiative”) engages in blood donation awareness
+                    through stage acting, social media promotion and blood group detection. Our
+                    team also coordinates relief efforts for flood‑affected regions in Sylhet,
+                    rescuing people and providing essential supplies such as dry food and clean
+                    water.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills and languages section displayed as a responsive grid -->
+        <section id="skills" class="fade-in">
+            <h2>Skills</h2>
+            <div class="card skill-group">
+                <h3>Programming &amp; Technical</h3>
+                <ul class="skills-list">
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>HTML &amp; CSS</li>
+                    <li>WordPress</li>
+                    <li>Data Structures &amp; Graph Algorithms</li>
+                </ul>
+            </div>
+            <div class="card skill-group">
+                <h3>Tools &amp; Platforms</h3>
+                <ul class="skills-list">
+                    <li>Google Workspace</li>
+                    <li>Microsoft Office Suite</li>
+                </ul>
+            </div>
+            <div class="card skill-group extra-skill-group hidden">
+                <h3>Soft Skills</h3>
+                <ul class="skills-list">
+                    <li>Teamwork</li>
+                    <li>Strategic Communications</li>
+                </ul>
+            </div>
+            <div class="card skill-group extra-skill-group hidden">
+                <h3>Languages &amp; Certifications</h3>
+                <ul class="skills-list">
+                    <li>Bengali – Native or bilingual proficiency</li>
+                    <li>English – Professional working proficiency</li>
+                    <li>PTE (CEFR B2)</li>
+                </ul>
+            </div>
+            <!-- Expand button for Skills -->
+            <div class="show-more-container">
+                <button id="toggle-skills" class="show-more-btn">Expand</button>
+            </div>
+        </section>
+
+        <!-- Awards & achievements section with show-more functionality -->
+        <section id="awards" class="fade-in">
+            <h2>Awards &amp; Achievements</h2>
+            <h3>Academic Awards</h3>
+            <ul>
+                <li class="award-item card"><strong>Talent Pool Scholarship</strong> – Awarded for exceptional academic excellence in the national Secondary School Certificate (SSC) examination (2022).</li>
+                <li class="award-item card"><strong>Excellence Award</strong> – Honoured by Al‑Amin Academy for outstanding academic performance; gained admission to the EEE department at the University of Chittagong and the Business Administration department at Shahjalal University of Science and Technology through a competitive entrance exam (2024).</li>
+                <li class="award-item card"><strong>First Prize</strong> – Winner of the Inter‑Schools Brain Hunting Competition (2019).</li>
+            </ul>
+            <!-- Additional awards hidden by default -->
+            <div class="extra-awards hidden">
+                <h3>Co‑curricular Awards</h3>
+                <ul>
+                    <li class="award-item card"><strong>Champion</strong> – Achieved first place in the state‑level debating competition, defeating the top eight schools (2019).</li>
+                    <li class="award-item card"><strong>Leading Debater &amp; Best Impromptu Speaker</strong> – Dual recognition at the state‑level debating competition for leadership and impromptu speaking skills (2019).</li>
+                </ul>
+                <h3>Social Recognition</h3>
+                <ul>
+                    <li class="award-item card"><strong>Best District Coordinator</strong> – Recognised for exceptional leadership and coordination within the Roar for Street Children initiative (2022).</li>
+                </ul>
+            </div>
+            <div class="show-more-container">
+                <button id="toggle-awards" class="show-more-btn">Expand</button>
+            </div>
+        </section>
+
+        <!-- Projects section showcasing key works -->
+        <section id="projects" class="fade-in">
+            <h2>Projects</h2>
+            <div class="project-item card">
+                <h3>Bank Management System: Pubali Bank Limited</h3>
+                <p>This is my first‑year project titled <em>Bank Management System: Pubali Bank Limited</em>. The project is built entirely in C programming language using only File I/O — no external database or library is used.</p>
+                
+                <a class="project-link" href="https://github.com/Soumik-Dastidar/Bank-Management-System" target="_blank" rel="noopener">View Project Repo</a>
+            </div>
+        </section>
+
+        <!-- Feedback section for gathering user insights -->
+        <section id="feedback" class="fade-in">
+            <h2>Feedback</h2>
+            <div class="card">
+                <p>Your feedback helps me improve. Please feel free to share your thoughts and suggestions.</p>
+                <a class="feedback-link" href="https://forms.gle/AZMKRvRff3FBCDAQ8" target="_blank" rel="noopener">Submit Feedback</a>
+            </div>
+        </section>
+
+        <!-- Contact section with visually distinct cards -->
+        <section id="contact" class="fade-in">
+            <h2>Contact</h2>
+            <div class="contact-cards">
+                <!-- LinkedIn card -->
+                <div class="contact-item">
+                    <img src="linkedin_icon_user.png" alt="LinkedIn" />
+                    <div>
+                        <a href="https://www.linkedin.com/in/soumik-dastidar/" target="_blank" rel="noopener"><strong>LinkedIn</strong></a>
+                    </div>
+                </div>
+                <!-- GitHub card -->
+                <div class="contact-item">
+                    <img src="github_icon_user.png" alt="GitHub" />
+                    <div>
+                        <a href="https://github.com/Soumik-Dastidar" target="_blank" rel="noopener"><strong>GitHub</strong></a>
+                    </div>
+                </div>
+                <!-- Facebook card -->
+                <div class="contact-item">
+                    <img src="facebook_icon_user.png" alt="Facebook" />
+                    <div>
+                        <!-- Link to the user's actual Facebook profile -->
+                        <a href="https://www.facebook.com/SoumikSoumya/" target="_blank" rel="noopener"><strong>Facebook</strong></a>
+                    </div>
+                </div>
+                <!-- Hashnode card -->
+                <div class="contact-item">
+                    <!-- Use a custom brand icon for Hashnode -->
+                    <img src="hashnode_icon_user.jpg" alt="Hashnode" />
+                    <div>
+                        <a href="https://hashnode.com/@soumik-dastidar" target="_blank" rel="noopener"><strong>Hashnode</strong></a>
+                    </div>
+                </div>
+                <!-- Email card -->
+                <div class="contact-item">
+                    <img src="email_icon_small.png" alt="Email" />
+                    <div>
+                        
+                        <a href="mailto:soumikdastider@gmail.com">soumikdastider@gmail.com</a>
+                    </div>
+                </div>
+                <!-- Location card -->
+                <div class="contact-item">
+                    <img src="location_icon_new.webp" alt="Location" />
+                    <div>
+                        
+                        <span>Sreemangal, Sylhet, Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Soumik Dastidar. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts for animations, dark mode toggle and show-more logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fade‑in animations for sections
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1,
+                }
+            );
+            const sections = document.querySelectorAll('section.fade-in');
+            sections.forEach((section) => {
+                observer.observe(section);
+            });
+
+            // Dark mode toggle logic
+            const modeToggle = document.getElementById('mode-toggle');
+            modeToggle.addEventListener('click', function () {
+                document.body.classList.toggle('dark-mode');
+                if (document.body.classList.contains('dark-mode')) {
+                    modeToggle.textContent = 'Light Mode';
+                } else {
+                    modeToggle.textContent = 'Dark Mode';
+                }
+            });
+
+            // Show/hide additional certifications
+            const certBtn = document.getElementById('toggle-certs');
+            const extraCerts = document.querySelectorAll('.extra-cert');
+            certBtn.addEventListener('click', function () {
+                extraCerts.forEach((item) => item.classList.toggle('hidden'));
+                certBtn.textContent = certBtn.textContent === 'Expand' ? 'Collapse' : 'Expand';
+            });
+
+            // Show/hide additional awards
+            const awardsBtn = document.getElementById('toggle-awards');
+            const extraAwards = document.querySelector('.extra-awards');
+            awardsBtn.addEventListener('click', function () {
+                extraAwards.classList.toggle('hidden');
+                awardsBtn.textContent = awardsBtn.textContent === 'Expand' ? 'Collapse' : 'Expand';
+            });
+
+            // Show/hide additional skill groups
+            const skillsBtn = document.getElementById('toggle-skills');
+            const extraSkillGroups = document.querySelectorAll('.extra-skill-group');
+            skillsBtn.addEventListener('click', function () {
+                extraSkillGroups.forEach((group) => group.classList.toggle('hidden'));
+                skillsBtn.textContent = skillsBtn.textContent === 'Expand' ? 'Collapse' : 'Expand';
+            });
+
+            // Toggle certificate detail boxes on summary click
+            const summaryBoxes = document.querySelectorAll('.cert-summary');
+            summaryBoxes.forEach((summary) => {
+                summary.addEventListener('click', function () {
+                    const parentRow = this.parentElement;
+                    const detailsBox = parentRow.querySelector('.cert-details-box');
+                    if (detailsBox) {
+                        detailsBox.classList.toggle('hidden');
+                    }
+                });
+            });
+
+            // Mobile navigation toggle
+            const mobileToggle = document.getElementById('mobile-menu-toggle');
+            const navList = document.querySelector('.navbar ul');
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', function () {
+                    navList.classList.toggle('show-menu');
+                });
+            }
+
+            // Close mobile menu when a navigation link is clicked
+            const navLinks = navList.querySelectorAll('a[href^="#"]');
+            navLinks.forEach((link) => {
+                link.addEventListener('click', function () {
+                    // Only collapse if currently open on mobile
+                    if (navList.classList.contains('show-menu')) {
+                        navList.classList.remove('show-menu');
+                    }
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>

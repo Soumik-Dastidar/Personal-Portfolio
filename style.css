@@ -1,0 +1,749 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+}
+.hero .subtitle {
+  font-size: 20px;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+.hero .slogan {
+  font-size: 16px;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Navigation bar */
+/* Navigation bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #003366; /* professional dark blue */
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+.navbar ul {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+.navbar li {
+  margin: 0 10px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar a:hover {
+  background-color: #005ba1;
+  color: #ffffff;
+}
+
+/* Mobile menu toggle button: hidden by default */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* Layout for main content */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+section {
+  padding: 30px 0; /* reduced vertical spacing between sections */
+  border-bottom: 1px solid #eee;
+}
+section:last-of-type {
+  border-bottom: none;
+}
+
+/* Wrap each main section in a light coloured container for better separation.
+   This applies a similar background and rounded corners as used in the feedback and contact sections. */
+main > section {
+  background: #f2f9ff;
+  border-radius: 8px;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  border: 1px solid #e0e8f5;
+}
+
+/* Dark mode override for section containers */
+body.dark-mode main > section {
+  background: #14213d;
+  border-color: #1c2e4a;
+}
+
+/* Provide extra space between the navigation bar and the first section */
+main > section:first-of-type {
+  margin-top: 40px;
+}
+section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #0067b8;
+  font-size: 28px;
+}
+
+/* Education list */
+.education-item {
+  margin-bottom: 30px;
+}
+.education-item h3 {
+  margin: 0 0 5px;
+  font-size: 22px;
+  color: #00436d;
+}
+.education-item p {
+  margin: 4px 0;
+  font-size: 15px;
+}
+.education-item ul {
+  padding-left: 20px;
+  margin: 10px 0 0;
+}
+.education-item ul li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* Certifications */
+#certifications ul {
+  padding-left: 20px;
+  margin: 0;
+}
+#certifications li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Skills and languages lists */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin: 10px 0 30px;
+}
+.skills-list li {
+  background: #e7f3ff;
+  color: #00436d;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for skill tags */
+.skills-list li:hover {
+  background-color: #d0e8ff;
+  transform: translateX(5px);
+  color: #003b66;
+}
+
+/* Contact links */
+#contact a {
+  color: #0067b8;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Distinct background for contact section */
+#contact {
+  background: #f2f9ff;
+  border-radius: 8px;
+  padding: 40px 20px;
+  /* Add space above the contact section to separate it from the previous section */
+  margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Mobile navigation menu styles */
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #003366;
+    padding: 10px 0;
+  }
+  .navbar ul.show-menu {
+    display: flex;
+  }
+  .mobile-menu-toggle {
+    display: block;
+    margin-left: 10px;
+  }
+  /* Stack list items vertically and widen click area */
+  .navbar li {
+    margin: 8px 0;
+  }
+  .navbar a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+  /* Keep dark mode toggle at far right */
+  .mode-toggle {
+    margin-left: auto;
+  }
+  /* Stack contact cards vertically */
+  .contact-cards {
+    flex-direction: column;
+  }
+  .contact-item {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 12px 15px;
+  }
+
+  /* Adjust hero text sizes for medium screens */
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero .subtitle {
+    font-size: 18px;
+  }
+  .hero .slogan {
+    font-size: 14px;
+  }
+  /* Adjust contact icon and text sizes */
+  .contact-item img {
+    width: 32px;
+    height: 32px;
+  }
+  .contact-item strong {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Compact hero section and typography */
+  .hero {
+    height: 300px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero .subtitle {
+    font-size: 14px;
+  }
+  .hero .slogan {
+    font-size: 12px;
+  }
+  section h2 {
+    font-size: 24px;
+  }
+  main {
+    width: 95%;
+  }
+
+  /* Make contact cards more compact on small screens */
+  .contact-item {
+    padding: 10px 12px;
+  }
+  .contact-item img {
+    width: 28px;
+    height: 28px;
+  }
+  .contact-item strong {
+    font-size: 14px;
+  }
+}
+
+/* Contact cards layout */
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  background: #f7f9fc;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  flex: 1 1 300px;
+  min-width: 260px;
+  position: relative;
+  overflow: hidden;
+}
+.contact-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 102, 179, 0.1);
+  z-index: 0;
+  transition: width 0.4s ease;
+}
+.contact-item:hover::before {
+  width: 100%;
+}
+.contact-item > * {
+  position: relative;
+  z-index: 1;
+}
+.contact-item img {
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+}
+.contact-item strong {
+  display: block;
+  font-size: 16px;
+  color: #00436d;
+}
+.contact-item a,
+.contact-item span {
+  color: #0067b8;
+  text-decoration: none;
+}
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Contact icons container */
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.contact-icons a img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/* Contact methods layout */
+.contact-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-item {
+  background: #f7f9fc;
+  border: 1px solid #e1e8f0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  flex: 1 1 250px;
+  max-width: 350px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.contact-item img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+.contact-item strong {
+  display: block;
+  color: #00436d;
+  margin-bottom: 2px;
+}
+.contact-item a {
+  color: #0067b8;
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Reusable card component for section items */
+.card {
+  /* Light mode card styling: bright background and subtle shadow */
+  background: #ffffff;
+  border: 1px solid #e0e8f5;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+body.dark-mode .card {
+  background: #1f3263;
+  border: 1px solid #284b80;
+}
+
+/* Certification and award item cards */
+.cert-item,
+.award-item {
+  list-style: none;
+  margin: 10px 0;
+}
+.cert-item.card,
+.award-item.card {
+  padding: 15px;
+  /* Make certificate and award cards clickable for detail toggles */
+  cursor: pointer;
+}
+
+/* Layout for certification rows and details */
+.cert-list .cert-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.cert-list .cert-summary.card,
+.cert-list .cert-details-box.card {
+  margin: 0;
+  padding: 10px 15px;
+  /* Let boxes size themselves based on content */
+  flex: none;
+}
+.cert-list .cert-summary.card {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Stack certification summary and details vertically on narrow screens */
+@media (max-width: 600px) {
+  .cert-list .cert-row {
+    flex-direction: column;
+  }
+  .cert-list .cert-summary.card {
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+}
+
+/* Certification details are hidden by default via the .hidden class.
+   Additional logic in JS will permanently reveal details on first hover. */
+
+/* Show-more container */
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.show-more-container .show-more-btn {
+  width: 120px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #0067b8;
+  border-radius: 8px;
+  color: #0067b8;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.show-more-container .show-more-btn:hover {
+  background: #0067b8;
+  color: #ffffff;
+}
+body.dark-mode .show-more-container .show-more-btn {
+  border-color: #7abaf2;
+  color: #c6e1ff;
+}
+body.dark-mode .show-more-container .show-more-btn:hover {
+  background: #7abaf2;
+  color: #0d1b2a;
+}
+
+
+/* Dark mode colour for project title */
+body.dark-mode #projects .project-item h3 {
+  color: #c6e1ff;
+}
+
+/* Responsive adjustments for show-more buttons and scroll bar */
+@media (max-width: 768px) {
+  .show-more-container .show-more-btn {
+    width: 100px;
+    height: 36px;
+    font-size: 14px;
+  }
+  /* no scroll bar adjustments in this breakpoint */
+}
+@media (max-width: 480px) {
+  .show-more-container .show-more-btn {
+    width: 90px;
+    height: 32px;
+    font-size: 13px;
+  }
+  /* no scroll bar adjustments in this breakpoint */
+}
+
+
+/* Fade‑in animation for sections */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #666;
+  margin-top: 40px;
+}
+
+/* Utility classes */
+.hidden {
+  display: none;
+}
+.show-more-btn {
+  background: transparent;
+  border: none;
+  color: #0067b8;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.show-more-btn:hover {
+  text-decoration: underline;
+}
+
+/* Projects section styles */
+#projects .project-item {
+  /* Match the brightness and border of other cards in light mode */
+  background: #ffffff;
+  border: 1px solid #e0e8f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+#projects .project-item h3 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #00436d;
+}
+#projects .project-item p {
+  margin: 10px 0;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #0067b8;
+  color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.project-link:hover {
+  background-color: #005ba1;
+}
+
+/* Feedback section styles */
+#feedback {
+  background: #f2f9ff;
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+#feedback p {
+  margin-bottom: 15px;
+}
+.feedback-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #0067b8;
+  color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.feedback-link:hover {
+  background-color: #005ba1;
+}
+
+/* Responsive contact card adjustment for very small screens */
+@media (max-width: 480px) {
+  .contact-item {
+    flex: 1 1 100%;
+    padding: 8px 10px;
+    margin: 0;
+  }
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #0d1b2a;
+  color: #e0e0e0;
+}
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #7abaf2;
+}
+body.dark-mode .navbar {
+  background: #0a1931;
+}
+body.dark-mode .navbar a {
+  color: #e0e0e0;
+}
+body.dark-mode .navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+body.dark-mode .mode-toggle {
+  border-color: #e0e0e0;
+  color: #e0e0e0;
+}
+body.dark-mode section {
+  border-bottom-color: #1c2e4a;
+}
+body.dark-mode #contact {
+  background: #14213d;
+}
+body.dark-mode .contact-item {
+  background: #1f3263;
+  border-color: #284b80;
+}
+body.dark-mode .contact-item strong {
+  color: #b0d4f1;
+}
+body.dark-mode .contact-item a,
+body.dark-mode .contact-item span {
+  color: #c6e1ff;
+}
+body.dark-mode .skills-list li {
+  background: #16324f;
+  color: #c6e1ff;
+}
+body.dark-mode .skills-list li:hover {
+  background-color: #204d80;
+  color: #ffffff;
+}
+body.dark-mode footer {
+  background: #14213d;
+  color: #889cb3;
+}
+body.dark-mode .education-item h3,
+body.dark-mode .activity-item h3 {
+  color: #a1c8e6;
+}
+body.dark-mode #projects .project-item {
+  background: #1f3263;
+}
+body.dark-mode .project-link {
+  background: #1e4a8a;
+}
+body.dark-mode .project-link:hover {
+  background: #163760;
+}
+body.dark-mode #feedback {
+  background: #14213d;
+}
+body.dark-mode .feedback-link {
+  background: #1e4a8a;
+}
+body.dark-mode .feedback-link:hover {
+  background: #163760;
+}
+
+/* Subsection headings within sections */
+section h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #00436d;
+  font-size: 20px;
+}
+
+/* Activity items spacing */
+.activity-item {
+  margin-bottom: 30px;
+}
+
+/* Mode toggle button */
+.mode-toggle {
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.mode-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode .mode-toggle {
+  color: #e0e0e0;
+  border-color: #e0e0e0;
+}
+body.dark-mode .mode-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
